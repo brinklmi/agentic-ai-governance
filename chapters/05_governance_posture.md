@@ -392,4 +392,4 @@ The posture assessment reveals the pattern. The propagation rule dictates the se
 
 ---
 
-**Next:** [Chapter 6 — Persistent Gaps: What Nobody Has Solved Yet](06_persistent_gaps.md)
+**Next:** [Chapter 6 — Policy-as-Code: From Documentation to Enforcement](06_policy_as_code.md)
