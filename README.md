@@ -126,7 +126,7 @@ chapters/
 ├── 01_sovereignty_equation.md    Diagnose: are you governing or being governed?
 ├── 02_six_themes.md              The universal convergence. What every framework agrees on.
 ├── 03_operating_model.md         Architecture that separates cognition from control.
-├── 04_maturity_model.md          Five levels. Where are you? What does the next level cost?
+├── 04_data_governance.md         Data governance: source, law, and architectural control plane.
 ├── 05_policy_as_code.md          From documentation to enforcement. The operational shift.
 ├── 06_persistent_gaps.md         What nobody has solved yet. Honest accounting.
 └── 07_implementation_pathway.md  Seven-phase roadmap. Concrete steps per maturity level.
