@@ -400,4 +400,4 @@ No other single intervention improves all five variables simultaneously. This is
 
 ---
 
-**Next:** [Chapter 7 — Persistent Gaps: What Nobody Has Solved Yet](07_persistent_gaps.md)
+**Next:** [Chapter 7 — Automation vs. Governance: The Dialectic That Defines Sovereign AI](07_automation_vs_governance.md)

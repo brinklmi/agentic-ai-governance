@@ -129,7 +129,7 @@ chapters/
 ├── 04_data_governance.md         Data governance: source, law, and architectural control plane.
 ├── 05_governance_posture.md      Six-layer posture assessment: symptoms of structural decay.
 ├── 06_policy_as_code.md          From documentation to enforcement. The operational shift.
-├── 07_persistent_gaps.md         What nobody has solved yet. Honest accounting.
+├── 07_automation_vs_governance.md The dialectic: how automation and governance co-evolve.
 └── 08_implementation_pathway.md  Seven-phase roadmap. Concrete steps per maturity level.
 
 appendices/
