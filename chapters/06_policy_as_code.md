@@ -400,4 +400,24 @@ No other single intervention improves all five variables simultaneously. This is
 
 ---
 
+## Case Pattern: When Automation Outpaces Governance
+
+**Principle:** You cannot move faster in automation than you are governed. If governance is not hand-in-hand and automation gets ahead of it, you are adding error to the process — not improving it.
+
+This pattern emerged clearly in a recent enterprise consulting engagement: the team explicitly committed that automation recommendations would ONLY be delivered alongside governance maturity requirements. No automation recommendation without a governance capacity assessment.
+
+**Implementation for any automation initiative:**
+
+For every automation opportunity identified, document:
+1. Current governance maturity for that domain (which AAGMM level?)
+2. Minimum governance maturity required to safely automate
+3. Gap between current and required
+4. Governance capacity buildout needed BEFORE automation proceeds
+
+**The anti-pattern:** Delivering automation recommendations without governance maturity requirements is an incomplete deliverable. It is like recommending a car without confirming the driver has a license.
+
+**Sovereignty equation mapping:** Automation without governance increases G (hollowness) — the denominator. This DECREASES sovereignty. The paradox: automation intended to help actually *hurts* if governance cannot keep pace. This is why the dialectic in Chapter 7 matters operationally — it is not a philosophical observation but a practical constraint that must be enforced in every project plan.
+
+---
+
 **Next:** [Chapter 7 — Automation vs. Governance: The Dialectic That Defines Sovereign AI](07_automation_vs_governance.md)

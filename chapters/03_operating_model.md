@@ -399,4 +399,33 @@ The architecture *is* the governance. Not a document describing governance. Not 
 
 ---
 
-**Next:** [Chapter 4 — The Maturity Model: Five Levels of Governance Capability](04_maturity_model.md)
+## Decision Heuristic: How Many Governance Tiers?
+
+A common implementation question: should governance be two-tier (steering + working) or three-tier (executive sponsors + steering + working)?
+
+The answer comes not from organizational size but from **decision bandwidth**.
+
+**Two-tier works when:**
+1. The steering team has direct authority over scope, budget, and timeline
+2. The steering team can convene within 48 hours for any decision
+3. No decision requires escalation beyond the steering team
+
+**Three-tier is needed when:**
+1. Budget authority sits above the steering team
+2. Cross-department impacts require executive arbitration
+3. The steering team cannot commit to 48-hour decision cycles
+
+**The anti-patterns:**
+
+| Mistake | Sovereignty Impact |
+|---------|-------------------|
+| Three-tier governance on a two-tier project | Increases F (fatigue) — decisions queue behind unnecessary escalation |
+| Two-tier governance on a three-tier project | Increases G (hollowness) — decisions made without proper authority |
+
+**The rule:** Tier count directly affects D (decision quality). Too few tiers means decisions lack authority. Too many tiers means decisions lack speed. The optimal tier count maximizes D while minimizing F.
+
+In practice: start with the fewest tiers that give every decision a clear owner with actual authority. Add a tier only when you find decisions that no one at the current level can make without going outside the structure.
+
+---
+
+**Next:** [Chapter 4 — Data Governance: Source, Law, and Architecture](04_data_governance.md)

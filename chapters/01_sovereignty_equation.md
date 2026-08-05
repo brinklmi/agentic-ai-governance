@@ -237,4 +237,33 @@ The geometry determines the threshold.
 
 ---
 
+## Worked Example: When Capacity Is Fixed
+
+A CIO states: "I am not going to get any new staff. I have to take what I have and make it work better."
+
+This is not a staffing problem. It is a sovereignty diagnostic.
+
+**Applying the equation:**
+
+When an organization cannot add resources (G is structurally fixed at a high value) and existing staff are at capacity (F is high), the ONLY levers available to increase S are improving C (governance design), D (decision quality), and R (recovery capacity).
+
+```
+S = (C × D × R) / (G × F)
+
+When G and F are constrained (cannot hire, cannot reduce fatigue through headcount):
+  - Only C, D, and R can move the number
+  - Governance design becomes the primary investment lever
+  - Not technology. Not automation. Not hiring. Governance.
+```
+
+**What this means in practice:**
+
+Governance maturity — decision rights, accountability clarity, policy enforcement, behavioral baselining — is the only path when capacity is fixed. The organization that cannot grow must instead become structurally more coherent.
+
+**Diagnostic question:** Ask any IT leader: "Are you expecting new headcount in the next 12 months?" If the answer is no, governance is their only available investment. Help them see it that way.
+
+This pattern appears constantly in public sector, education, and mid-market enterprises. They cannot outspend their governance gaps. They can only out-design them.
+
+---
+
 **Next:** [Chapter 2 — The Six Universal Convergence Themes](02_six_themes.md)
