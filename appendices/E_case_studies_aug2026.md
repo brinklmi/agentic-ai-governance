@@ -190,3 +190,155 @@ Both cases show automation outrunning governance. The dialectic must be explicit
 ---
 
 *These case studies are anonymized structural patterns derived from public reporting in August 2026. They are presented as governance diagnostic examples, not as investment or legal advice.*
+
+
+---
+
+## Case C: Governance of Human Trust — AI Voice Cloning as Social Engineering
+
+### What Happened
+
+On August 5, 2026, multiple prominent asset management firms were targeted in a coordinated AI-powered voice phishing ("vishing") campaign. Attackers used AI voice-cloning technology to impersonate trusted colleagues and executives, replicating specific voices, tones, and phrasing to trick employees into revealing passwords, granting remote access, or sharing sensitive data.
+
+The targeted firms confirmed the attacks but stated no client information was stolen. The key: these were not isolated phishing emails. This was a **coordinated assault** on the highest-value financial targets using synthetic media that bypassed every technical control.
+
+### Why This Is a Governance Failure, Not Just a Security Event
+
+Traditional cybersecurity focuses on firewalls, malware detection, and encryption. This attack bypassed all of those by targeting the **human layer**. No endpoint protection can stop an employee from voluntarily handing over credentials because they believe they are speaking to their boss.
+
+The cost asymmetry is staggering:
+- **Attack cost:** Less than $0.10/minute to generate a convincing voice clone. Requires only seconds of public audio (earnings calls, podcasts, conference panels).
+- **Defense cost:** Global cybersecurity spending projected at $240-249 billion in 2026. Financial services firms allocating 10-15% of IT budgets specifically to counter AI-powered threats.
+
+This is no longer optional "security spending." It is the **operational cost of maintaining trust** in an environment where trust itself has been weaponized.
+
+### The Governance Failures
+
+| Dimension | Failure | Framework Reference |
+|-----------|---------|-------------------|
+| **Identity Verification** | Voice as identity is now forgeable — traditional verification obsolete | Identity-First Governance (Ch2): identity must be cryptographic, not biometric |
+| **Human Layer Unprotected** | Technical controls are complete but human decision-making is ungoverned | Operating Model (Ch3): governance layer must extend to human actions |
+| **Trust Exploited** | Attackers weaponized the Principal-Agent relationship — impersonated the Principal | Data Governance (Ch4): Principal-Agent problem at the identity layer |
+| **No Synthetic Media Detection** | No governance framework for detecting AI-generated communications | Persistent Gaps (Ch8): novel attack vectors outpace governance frameworks |
+
+### Sovereignty Equation Diagnosis
+
+```
+S = (C × D × R) / (G × F)
+
+C (circuit):   Weak — no governance framework for synthetic media detection
+D (decision):  Weak — employees made decisions based on false identity signals
+R (recovery):  Moderate — attacks were eventually identified and contained
+G (hollowness): High — governance assumed voice identity was trustworthy
+F (fatigue):   High — employees already managing high cognitive load; voice cloning adds another layer
+
+Result: S < 1 → The human layer was CAPTURED by AI-powered social engineering
+```
+
+### The Principal-Agent Weaponization
+
+This attack exploits the Principal-Agent relationship at its most fundamental level:
+
+```
+Normal Operation:
+  Principal (Executive) → communicates via voice → Agent (Employee) → acts on instruction
+
+Attack:
+  Attacker → generates synthetic voice of Principal → Agent (Employee) → acts on false instruction
+
+The employee was acting as a faithful Agent.
+The Principal was an AI-generated counterfeit.
+The governance gap: no mechanism to verify the Principal's authenticity.
+```
+
+Traditional identity verification assumed that voices are authentic because they are difficult to forge. AI made forgery trivial. The governance framework did not update to match the new threat surface.
+
+### What Would Have Prevented This
+
+1. **Multi-factor trust verification**: Voice alone is no longer sufficient identity. Sensitive requests require out-of-band confirmation (callback to a known number, challenge-response with information only the real person would know, or cryptographic authentication).
+
+2. **Human-layer governance** (extending Ch3): The operating model's four layers focus on governing AI agents. But when AI is used to attack *humans*, governance must extend to human decision-making. Employees need structural support — not just training — to resist synthetic media attacks.
+
+3. **Synthetic media detection as a policy gate** (extending Ch6): Just as data access requires classification checks, sensitive communications should pass through synthetic media detection before being acted upon. This is Policy-as-Code applied to the communication layer.
+
+4. **Continuous identity verification**: Identity is not a one-time check at login. It must be continuously validated throughout interactions — especially when requests escalate in sensitivity. This mirrors the behavioral baselining principle (Ch2, Theme 5) applied to human communication patterns.
+
+---
+
+## The Complete Triad: Three Faces of AI Governance Failure
+
+| | Case A (Deployment) | Case B (Development) | Case C (Human Trust) |
+|---|---|---|---|
+| **Attack vector** | AI model deployment | AI-assisted code analysis | AI-generated synthetic media |
+| **Target** | Data sovereignty | Code integrity | Human trust |
+| **What was exploited** | Cheap access → shadow AI | Open-source visibility → vulnerability discovery | Public audio → voice cloning |
+| **Governance gap** | No controls on AI adoption | No human verification of AI audit | No synthetic media detection |
+| **Layer** | External boundary | Internal process | Human behavioral |
+| **Kill chain phase** | Reconnaissance | Vulnerability discovery | Execution via social engineering |
+| **Sovereignty variable most affected** | G (hollowness) | C (circuit) | D (decision quality) |
+
+Together they reveal: **AI has weaponized the entire attack surface** — from what enters your system, to how your system is built, to how your people make decisions. Governance that addresses only one or two of these layers is governance with a known, exploitable gap.
+
+### The AI-Powered Kill Chain
+
+```
+PHASE 1: Reconnaissance
+  Tool: Shadow AI deployment (Case A)
+  Mechanism: AI models scan for data, vulnerabilities, and targets autonomously
+  Governance response: Agent catalogs, identity-first, data sovereignty gates
+
+PHASE 2: Vulnerability Discovery
+  Tool: AI-assisted code analysis (Case B)
+  Mechanism: AI finds hidden bugs in public code that humans missed for years
+  Governance response: Human-in-the-loop, continuous monitoring, non-override principle
+
+PHASE 3: Execution
+  Tool: AI-generated synthetic media (Case C)
+  Mechanism: AI impersonates trusted humans to bypass all technical controls
+  Governance response: Synthetic media detection, multi-factor trust, human-layer governance
+```
+
+---
+
+## The Financial Reality: Defense as Operational Cost
+
+The Point72 case makes explicit what the other cases imply: **proactive governance is not an insurance policy. It is the cost of maintaining solvency.**
+
+| Dimension | Without Governance | With Governance |
+|-----------|-------------------|-----------------|
+| **Case A outcome** | Data exfiltrated to adversarial jurisdiction. Regulatory fines. Reputational collapse. | Shadow AI blocked at boundary. Data stays sovereign. No incident. |
+| **Case B outcome** | $130M+ stolen. 5,200 addresses drained. Trust in product destroyed. | Bug caught by human-verified audit. Patched before exploitation. |
+| **Case C outcome** | Credentials stolen. Proprietary strategies leaked. Fund collapses. | Attack identified and blocked. No data lost. Trust maintained. |
+
+The pattern: governance spending prevents catastrophic loss. The absence of governance converts "security budget" into "existential threat." In the AI era, **security spending is a direct proxy for organizational sovereignty.**
+
+---
+
+## Eight Governance Imperatives (Extended)
+
+Building on the original five from Cases A and B:
+
+| # | Imperative | Source Case |
+|---|-----------|-------------|
+| 1 | Mandatory human-in-the-loop for AI-generated audits | Case B |
+| 2 | AI agent catalogs and identity management | Case A |
+| 3 | Continuous monitoring, not periodic audits | Case B |
+| 4 | Data sovereignty as a non-negotiable governance gate | Case A |
+| 5 | Automation-governance dialectic management | Cases A + B |
+| 6 | **Synthetic media detection at all communication entry points** | Case C |
+| 7 | **Human-layer governance: extend governance to human decision-making** | Case C |
+| 8 | **Multi-factor trust verification: identity as continuous process** | Case C |
+
+---
+
+## Core Principle (Updated)
+
+> AI has weaponized code, data, and trust.
+> Governance must defend all three — the boundary (what enters),
+> the process (how it's built), and the human (how it's trusted).
+> Without all three, sovereignty is an illusion.
+> Defense is not a cost center. It is the cost of remaining sovereign.
+
+---
+
+*These case studies are derived from public reporting in August 2026. They are presented as governance diagnostic examples, not as investment or legal advice.*
