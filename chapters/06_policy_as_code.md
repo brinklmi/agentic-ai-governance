@@ -392,11 +392,85 @@ No other single intervention improves all five variables simultaneously. This is
 
 ---
 
+## The Next Frontier: Formally Verified Governance Policies
+
+Policy-as-code is necessary. But it is not sufficient.
+
+Code can have bugs. Policies expressed as code can have logic errors, edge cases, and unintended interactions. The question that matters most: **how do you KNOW your governance policy is correct?**
+
+Testing catches known failure modes. But governance policies operate in adversarial environments where unknown failure modes are the primary threat. Testing tells you "this policy passes these scenarios." It does not tell you "this policy is correct in ALL scenarios."
+
+### Formal Verification: Mathematical Proof of Policy Correctness
+
+Formal verification applies the same mathematical methods used to verify hardware circuits, flight-critical avionics software, and nuclear reactor control systems — to governance policies.
+
+The difference:
+
+| Approach | What It Tells You | Confidence Level |
+|----------|-------------------|-----------------|
+| Testing | "This policy passes these specific scenarios" | Probabilistic (only as good as your test coverage) |
+| Fuzzing | "This policy survives these random inputs" | Probabilistic (good at finding bugs, cannot prove absence) |
+| **Formal verification** | **"This policy is correct in ALL possible scenarios"** | **Mathematical proof (sound and complete)** |
+
+### How It Works for Governance Policies
+
+A governance policy (expressed as code) can be translated into a mathematical formula. An SMT solver (Satisfiability Modulo Theories) then exhaustively proves whether the formula holds in all cases — or produces a counterexample that shows exactly where and how it fails.
+
+```
+Policy (human intent):
+  "No agent may access financial data without Tier 3 classification"
+
+Policy-as-Code (implementation):
+  rule: financial_data_gate
+  condition: data_class == "FINANCIAL"
+  require: agent.tier >= 3
+  deny_otherwise: true
+
+Formal Verification (mathematical proof):
+  ∀ agent, ∀ request:
+    (request.data_class == "FINANCIAL" ∧ agent.tier < 3) → DENY
+
+  Proof result: VALID (no counterexample exists)
+  Meaning: This policy PROVABLY blocks all under-classified agents
+           from financial data in all possible scenarios.
+```
+
+### Why This Matters for Enterprise Governance
+
+1. **Regulatory confidence:** When a regulator asks "how do you know your AI governance is effective?" — the answer shifts from "we tested it" to "we proved it mathematically." This is a qualitative difference in assurance level.
+
+2. **Composition safety:** Individual policies may be correct, but their combination may have gaps (the non-compositionality problem from Chapter 9). Formal verification can prove that a SET of policies, operating together, maintains the intended invariants.
+
+3. **Autonomous policy synthesis:** Emerging tools can generate governance policies from natural-language requirements and then verify them automatically. The human specifies intent. The tool generates code. The verifier proves correctness. The human approves. This is the path to governance that scales without proportional human effort.
+
+4. **Temporal properties:** Beyond point-in-time policy checks, formal methods can verify temporal properties: "this policy has ALWAYS been enforced" or "within 5 minutes of a violation, recovery is GUARANTEED to occur." This addresses the continuous monitoring requirement in a mathematically rigorous way.
+
+### Current Limitations (Honest Gaps)
+
+- **Scalability:** Formal verification of complex policy systems remains computationally expensive for very large rule sets (though emerging research shows practical performance at enterprise scale)
+- **Specification gap:** The proof is only as good as the specification. If you formally verify the wrong property, the proof is valid but irrelevant.
+- **Stochastic systems:** LLM-based agents are non-deterministic. Formal verification works for the governance policies themselves, but cannot fully verify agent behavior (this is Gap 1 in Chapter 8).
+- **Adoption:** Most organizations lack formal methods expertise. Tooling is improving but not yet mainstream.
+
+### The Progression
+
+```
+Level 1: Governance as documentation (most organizations today)
+Level 2: Governance as code (policy-as-code — this chapter)
+Level 3: Governance as PROVEN code (formally verified policies — the frontier)
+```
+
+Level 3 is where the field is heading. The mathematics exist. The tools are maturing. The first organizations to formally verify their AI governance policies will have an assurance level that no amount of testing can match — and a regulatory advantage that compounds over time.
+
+---
+
 ## Core Principle
 
 > Policy that is not enforced in code is policy that depends on human goodwill.
 > Human goodwill does not scale. Code does.
-> Convert governance from hope to architecture.
+> But code that is not formally verified is code that depends on test coverage.
+> Test coverage does not prove correctness. Mathematics does.
+> Convert governance from hope to architecture. Then prove the architecture is sound.
 
 ---
 
