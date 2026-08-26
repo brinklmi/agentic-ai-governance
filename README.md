@@ -133,14 +133,17 @@ chapters/
 ├── 08_persistent_gaps.md         What nobody has solved yet. Honest accounting.
 ├── 09_threat_landscape.md        Why individually safe agents form unsafe systems.
 ├── 10_infrastructure_standards.md The identity and trust layer: DIDs, VCs, ZKPs, protocols.
-└── 11_governance_debt.md         The economics of deferred governance. The maturity paradox.
+├── 11_governance_debt.md         The economics of deferred governance. The maturity paradox.
+└── 12_capacity_constrained_governance.md  When compute access requires governance. The new reality.
 
 appendices/
 ├── A_risk_classification.md      10 risk factors for classifying agent governance requirements
 ├── B_trust_indicators.md         Six measurable trust indicators with assessment guidance
 ├── C_enterprise_hardening.md     The reference architecture checklist
 ├── D_market_data.md              Key statistics and source references
-└── E_case_studies_aug2026.md     Real-world governance failures: DeepSeek, Coldcard, Point72
+├── E_case_studies_aug2026.md     Real-world governance failures: DeepSeek, Coldcard, Point72
+├── F_case_studies_twg_federal_warning.md  TWG Global ($40B failure) & Five-Agency AI Code Warning
+└── G_governance_economics.md     Compensation bifurcation & FinOps survival economics
 ```
 
 ---
