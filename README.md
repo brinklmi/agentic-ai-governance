@@ -134,7 +134,8 @@ chapters/
 ├── 09_threat_landscape.md        Why individually safe agents form unsafe systems.
 ├── 10_infrastructure_standards.md The identity and trust layer: DIDs, VCs, ZKPs, protocols.
 ├── 11_governance_debt.md         The economics of deferred governance. The maturity paradox.
-└── 12_capacity_constrained_governance.md  When compute access requires governance. The new reality.
+├── 12_capacity_constrained_governance.md  When compute access requires governance. The new reality.
+└── 13_analytics_governance_layer.md  The missing link between data governance and AI governance.
 
 appendices/
 ├── A_risk_classification.md      10 risk factors for classifying agent governance requirements
