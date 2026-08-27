@@ -135,7 +135,8 @@ chapters/
 ├── 10_infrastructure_standards.md The identity and trust layer: DIDs, VCs, ZKPs, protocols.
 ├── 11_governance_debt.md         The economics of deferred governance. The maturity paradox.
 ├── 12_capacity_constrained_governance.md  When compute access requires governance. The new reality.
-└── 13_analytics_governance_layer.md  The missing link between data governance and AI governance.
+├── 13_analytics_governance_layer.md  The missing link between data governance and AI governance.
+└── 14_governing_user_facing_agents.md  The no-code paradox: when everyone controls agents.
 
 appendices/
 ├── A_risk_classification.md      10 risk factors for classifying agent governance requirements
@@ -144,7 +145,8 @@ appendices/
 ├── D_market_data.md              Key statistics and source references
 ├── E_case_studies_aug2026.md     Real-world governance failures: DeepSeek, Coldcard, Point72
 ├── F_case_studies_twg_federal_warning.md  TWG Global ($40B failure) & Five-Agency AI Code Warning
-└── G_governance_economics.md     Compensation bifurcation & FinOps survival economics
+├── G_governance_economics.md     Compensation bifurcation & FinOps survival economics
+└── H_agentic_workspace_checklist.md  57-item governance checklist for deploying agentic workspaces
 ```
 
 ---
