@@ -146,7 +146,8 @@ appendices/
 ├── E_case_studies_aug2026.md     Real-world governance failures: DeepSeek, Coldcard, Point72
 ├── F_case_studies_twg_federal_warning.md  TWG Global ($40B failure) & Five-Agency AI Code Warning
 ├── G_governance_economics.md     Compensation bifurcation & FinOps survival economics
-└── H_agentic_workspace_checklist.md  57-item governance checklist for deploying agentic workspaces
+├── H_agentic_workspace_checklist.md  57-item governance checklist for deploying agentic workspaces
+└── I_definition_of_done_scoring.md  Composite scoring framework for governance artifacts (1-5 rubric, weighted formula, maturity phases)
 ```
 
 ---
