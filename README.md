@@ -136,7 +136,8 @@ chapters/
 ├── 11_governance_debt.md         The economics of deferred governance. The maturity paradox.
 ├── 12_capacity_constrained_governance.md  When compute access requires governance. The new reality.
 ├── 13_analytics_governance_layer.md  The missing link between data governance and AI governance.
-└── 14_governing_user_facing_agents.md  The no-code paradox: when everyone controls agents.
+├── 14_governing_user_facing_agents.md  The no-code paradox: when everyone controls agents.
+└── 15_memory_as_governance_control.md  Why stateless agents cannot be governed. The promotion path.
 
 appendices/
 ├── A_risk_classification.md      10 risk factors for classifying agent governance requirements
