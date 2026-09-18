@@ -148,7 +148,8 @@ appendices/
 ├── F_case_studies_twg_federal_warning.md  TWG Global ($40B failure) & Five-Agency AI Code Warning
 ├── G_governance_economics.md     Compensation bifurcation & FinOps survival economics
 ├── H_agentic_workspace_checklist.md  57-item governance checklist for deploying agentic workspaces
-└── I_definition_of_done_scoring.md  Composite scoring framework for governance artifacts (1-5 rubric, weighted formula, maturity phases)
+├── I_definition_of_done_scoring.md  Composite scoring framework for governance artifacts (1-5 rubric, weighted formula, maturity phases)
+└── J_token_cost_attribution.md   Measuring budgeted autonomy: inference-boundary instrumentation, observability limits, the efficiency paradox
 ```
 
 ---
